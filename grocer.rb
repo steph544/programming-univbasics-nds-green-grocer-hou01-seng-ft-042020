@@ -71,7 +71,7 @@ apply_coupons(newcart,coupons)
 apply_clearance(newcart)
 counter=0 
 total=0 
-when counter<newcart.length do 
+while counter<newcart.length do 
 total+=(newcart[counter][:price] * newcart[counter][:count]).round(2)
 counter+=1 
 end
