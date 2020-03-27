@@ -66,7 +66,6 @@ end
 
 def checkout(cart, coupons)
 newcart=consolidate_cart(cart)
-binding.pry 
 apply_coupons(newcart,coupons)
 apply_clearance(newcart)
 counter=0 
