@@ -62,13 +62,15 @@ def apply_clearance(cart)
   counter+=1
 end
   cart
-    
-  # Consult README for inputs and outputs
-  #
-  # REMEMBER: This method **should** update cart
 end
 
 def checkout(cart, coupons)
+newcart=consolidate_cart(cart)
+apply_coupons(newcart,coupons)
+apply_clearance(newcart)
+binding.pry 
+newcart
+
   # Consult README for inputs and outputs
   #
   # This method should call
