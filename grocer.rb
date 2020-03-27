@@ -76,10 +76,10 @@ counter+=1
 end
 
 if total > 100
- final_total= (total-(total*0.1)).round(2)
+ total= (total-(total*0.1)).round(2)
 end
 
-final_total 
+total
   # Consult README for inputs and outputs
   #
   # This method should call
